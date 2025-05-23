@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1 - Aljabar & Linear</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            color: #999;
+            padding: 10px 25px;
+            font-size: 14px;
+        }
+        
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 0 25px 25px 25px;
+        }
+        
+        .content-main {
+            flex: 1;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .content-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #a8cef1;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+        
+        .book-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .subtitle {
+            margin-left: auto;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .content-area {
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 170px;
+            margin-right: 15px;
+        }
+        
+        .menu-item {
+            background-color: white;
+            border: 1px solid #c4dbf5;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .text-box {
+            background-color: #a8cef1;
+            border-radius: 10px;
+            padding: 15px;
+            color: #000;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">materi</div>
+    
+    <div class="container">
+        <div class="content-main">
+            <div class="content-header">
+                <div class="book-icon">
+                    <img src="materi.PNG" alt="Book Icon" style="max-width: 100%; max-height: 100%;">
+                </div>
+                <h1 class="title">Pertemuan 1</h1>
+                <div class="subtitle">Aljabar & Linear</div>
+            </div>
+            
+            <div class="content-area">
+                <div class="sidebar">
+                    <div class="menu-item">Pertemuan 2</div>
+                    <div class="menu-item">Pertemuan 3</div>
+                    <div class="menu-item">Pertemuan 4</div>
+                    <div class="menu-item">Pertemuan 5</div>
+                    <div class="menu-item">Pertemuan 6</div>
+                    <div class="menu-item">Pertemuan 7</div>
+                    <div class="menu-item">Pertemuan 8</div>
+                </div>
+                
+                <div class="main-content">
+                    <div class="text-box">
+                        Jadi hari ini kita mau belajar tentang aljabar<br>
+                        1 ditambah 1 sama dengan 2 terus 3<br>
+                        ditambah 3 sama dengan 6 dan selanjut nya
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript untuk menangani klik pada menu item
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+                console.log('Clicked: ' + this.innerText);
+                // Di sini bisa ditambahkan logika untuk mengganti konten
+            });
+        });
+    </script>
+</body>
+</html>
